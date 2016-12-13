@@ -5,8 +5,6 @@ CF_PASSWORD=${2:-$CF_PASSWORD}
 CF_ORG=${3:-$CF_ORG}
 CF_SPACE=${4:-$CF_SPACE}
 
-
-
 function install_cf(){
     mkdir -p $HOME/bin
     curl -v -L -o cf.tgz 'https://cli.run.pivotal.io/stable?release=linux64-binary&version=6.15.0&source=github-rel'
